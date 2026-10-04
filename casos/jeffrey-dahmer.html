@@ -7,19 +7,21 @@
 <meta name="description" content="Jeffrey Dahmer: o caso de Milwaukee (Estados Unidos, 1978–1991)">
 <meta property="og:title" content="Jeffrey Dahmer: o caso de Milwaukee (Estados Unidos, 1978–1991)">
 <meta property="og:description" content="Jeffrey Dahmer: o caso de Milwaukee (Estados Unidos, 1978–1991)">
-<meta property="og:image" content="https://sites84.github.io/Tudo-sobre-o-crime/assets/jeffrey-dahmer.svg">
+<meta property="og:image" content="https://sites84.github.io/Tudo-sobre-o-crime/casos/capa-jeffrey-dahmer.webp">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <header class="site-header"><nav class="nav"><a class="brand" href="../">Tudo Sobre o Crime</a><a class="back" href="../">Todos os casos</a></nav></header>
-<div class="hero"><img src="../assets/jeffrey-dahmer.svg" alt="Ilustração noturna do edifício Oxford em Milwaukee"></div>
+<div class="hero"><img src="capa-jeffrey-dahmer.webp" alt="Ilustração de capa do caso Jeffrey Dahmer"></div>
 <main class="container">
 <section class="article-head"><h1>Jeffrey Dahmer: o caso de Milwaukee (Estados Unidos, 1978–1991)</h1><button class="share" data-share type="button">↗ Compartilhar</button></section>
-<article class="article" id="article-content"><p>Carregando o conteúdo...</p></article>
+<article class="article" id="article-content">
+<p>Carregando o conteúdo...</p>
+</article>
 </main>
 <footer class="footer">Tudo Sobre o Crime</footer>
 <script>
-(async()=>{const files=['jeffrey-dahmer-1.htmlfrag','jeffrey-dahmer-2.htmlfrag','jeffrey-dahmer-3.htmlfrag','jeffrey-dahmer-4.htmlfrag','jeffrey-dahmer-5.htmlfrag'];const box=document.getElementById('article-content');try{const html=await Promise.all(files.map(f=>fetch(f).then(r=>{if(!r.ok)throw new Error('Falha ao carregar '+f);return r.text()})));box.innerHTML=html.join('\n')}catch(e){box.innerHTML='<p>Não foi possível carregar o conteúdo. Recarregue a página.</p>';console.error(e)}})();
+(async()=>{const files=['jeffrey-dahmer-1.htmlfrag','jeffrey-dahmer-2.htmlfrag','jeffrey-dahmer-3.htmlfrag','jeffrey-dahmer-4.htmlfrag','jeffrey-dahmer-5.htmlfrag'];const box=document.getElementById('article-content');try{const html=await Promise.all(files.map(f=>fetch(f).then(r=>{if(!r.ok)throw new Error('Falha ao carregar '+f);return r.text()})));const parts=html.join('\n');const marker='<h2>Quem era Jeffrey Dahmer</h2>';if(parts.includes(marker)){const pieces=parts.split(marker);box.innerHTML=pieces[0]+'<figure class="case-hq"><img src="hq-jeffrey-dahmer.webp" alt="Ilustração em HQ sobre a trajetória do caso Jeffrey Dahmer" loading="lazy"></figure>'+marker+pieces.slice(1).join(marker)}else{box.innerHTML=parts}}catch(e){box.innerHTML='<p>Não foi possível carregar o conteúdo. Recarregue a página.</p>';console.error(e)}})();
 </script>
 <script src="../script.js"></script>
 </body>
