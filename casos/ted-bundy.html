@@ -7,17 +7,23 @@
 <meta name="description" content="Ted Bundy: o caso (Estados Unidos, 1974–1978)">
 <meta property="og:title" content="Ted Bundy: o caso (Estados Unidos, 1974–1978)">
 <meta property="og:description" content="Ted Bundy: o caso (Estados Unidos, 1974–1978)">
+<meta property="og:image" content="https://sites84.github.io/Tudo-sobre-o-crime/assets/ted-bundy-capa.webp">
 <link rel="stylesheet" href="../style.css">
+<style>
+.article-cover{display:block;width:100%;height:auto;margin:0 0 28px;border-radius:10px;cursor:pointer}
+</style>
 </head>
 <body>
 <header class="site-header"><nav class="nav"><a class="brand" href="../">Tudo Sobre o Crime</a><a class="back" href="../">Todos os casos</a></nav></header>
 <main class="container">
 <section class="article-head"><h1>Ted Bundy: o caso (Estados Unidos, 1974–1978)</h1><button class="share" data-share type="button">↗ Compartilhar</button></section>
-<article class="article" id="article-content"><p>Carregando o conteúdo...</p></article>
+<article class="article" id="article-content">
+<img class="article-cover" src="../assets/ted-bundy-capa.webp" alt="Capa do caso Ted Bundy" loading="eager">
+<p>Carregando o conteúdo...</p></article>
 </main>
 <footer class="footer">Tudo Sobre o Crime</footer>
 <script>
-(async()=>{const files=['ted-bundy-1.htmlfrag','ted-bundy-2.htmlfrag','ted-bundy-3.htmlfrag','ted-bundy-4.htmlfrag','ted-bundy-5.htmlfrag'];const box=document.getElementById('article-content');try{const html=await Promise.all(files.map(f=>fetch(f).then(r=>{if(!r.ok)throw new Error('Falha ao carregar '+f);return r.text()})));box.innerHTML=html.join('\n')}catch(e){box.innerHTML='<p>Não foi possível carregar o conteúdo. Recarregue a página.</p>';console.error(e)}})();
+(async()=>{const files=['ted-bundy-1.htmlfrag','ted-bundy-2.htmlfrag','ted-bundy-3.htmlfrag','ted-bundy-4.htmlfrag','ted-bundy-5.htmlfrag'];const box=document.getElementById('article-content');try{const html=await Promise.all(files.map(f=>fetch(f).then(r=>{if(!r.ok)throw new Error('Falha ao carregar '+f);return r.text()})));box.innerHTML='<img class="article-cover" src="../assets/ted-bundy-capa.webp" alt="Capa do caso Ted Bundy" loading="eager">'+html.join('\n')}catch(e){box.innerHTML='<img class="article-cover" src="../assets/ted-bundy-capa.webp" alt="Capa do caso Ted Bundy" loading="eager"><p>Não foi possível carregar o conteúdo. Recarregue a página.</p>';console.error(e)}})();
 </script>
 <script src="../script.js"></script>
 </body>
